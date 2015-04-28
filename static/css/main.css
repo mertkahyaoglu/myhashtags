@@ -1,0 +1,64 @@
+body {
+  font-family: "proxima"
+}
+
+#chart {
+  width: 900px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.search {
+  width: 500px;
+  height: 50px;
+  margin: 200px auto;
+}
+
+.search h1 {
+  color: #55ACEE;
+  text-align: center;
+  margin: 60px 0;
+  font-size: 40px;
+}
+
+.search input {
+  width: 73%;
+  border: none;
+  height: 30px;
+  border-bottom: 2px solid #55ACEE;
+  outline: none;
+  font-size: 20px;
+}
+.search a {
+  color: #55ACEE;
+  display: inline-block;
+  width: 20%;
+  line-height: 30px;
+  border: 2px solid #55ACEE;
+  float:right;
+  margin-left: 5%;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.search a:hover {
+  background-color: #55ACEE;
+  color: #fff;
+}
+
+.error {
+  margin: 250px auto;
+}
+
+.error h1 {
+  font-size: 40px;
+  color: #ed3847;
+  text-align:center;
+}
+
+@font-face {
+  font-family: 'proxima';
+  src: url('../fonts/proxima.otf') format('opentype');
+}
