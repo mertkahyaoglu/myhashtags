@@ -32,6 +32,7 @@ def countHashtags(hashtags):
         counts[ht] = counts[ht] + 1 if ht in counts else 1
     return counts
 
+#get hashtags of a user
 def getHashtags(username, count=100):
     try:
         timeline = api.user_timeline(username, count=count)
@@ -50,8 +51,9 @@ def getHashtags(username, count=100):
 
     counts = countHashtags(hashtags)
     data = arrayify(counts)
-    return data;
+    return data
 
+#get tweets of a user
 def getTweets(username):
     try:
         timeline = api.user_timeline(username, count=1000)
