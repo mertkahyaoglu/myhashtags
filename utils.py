@@ -9,6 +9,7 @@ api = tweepy.API(auth)
 
 cache_result = pyfscache.FSCache('cache/tweets', days=1)
 
+@cache_result
 def getByHashtags(str):
     items = tweepy.Cursor(api.search, q=str).items(10)
     for item in items:
